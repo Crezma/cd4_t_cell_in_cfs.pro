@@ -1,9 +1,15 @@
 ## TODO
 
-Read http://topicpageswiki.plos.org/wiki/De_Novo_Gene_Birth
+3* vs 1*
 
-Do at the transcript level.
+3* vs 3
 
-Check immune population genes.
+4* vs 4
 
-Automate mapping gene to species.
+Transcript
+
+Gene
+
+Gene set
+
+Repeat with other controls
