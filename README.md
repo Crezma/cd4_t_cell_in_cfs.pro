@@ -2,9 +2,9 @@
 
 3* vs 1*
 
-3* vs 3
+3\* vs 3
 
-4* vs 4
+4\* vs 4
 
 Transcript
 

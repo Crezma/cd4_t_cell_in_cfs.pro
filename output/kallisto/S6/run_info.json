@@ -1,13 +1,13 @@
 {
-	"n_targets": 187626,
-	"n_bootstraps": 0,
-	"n_processed": 47562788,
-	"n_pseudoaligned": 41247469,
-	"n_unique": 8346019,
-	"p_pseudoaligned": 86.7,
-	"p_unique": 17.5,
-	"kallisto_version": "0.46.2",
-	"index_version": 10,
-	"start_time": "Sun May 23 23:51:45 2021",
-	"call": "kallisto quant --threads 8 --index /Volumes/CarrotCake/garden/data/grch/Homo_sapiens.GRCh38.cdna.all.fa.gz.kallisto_index --output-dir S6 /Users/kwat/Downloads/136-6_S6_L004_R1_001.fastq.gz /Users/kwat/Downloads/136-6_S6_L004_R2_001.fastq.gz"
+  "n_targets": 187626,
+  "n_bootstraps": 0,
+  "n_processed": 47562788,
+  "n_pseudoaligned": 41247469,
+  "n_unique": 8346019,
+  "p_pseudoaligned": 86.7,
+  "p_unique": 17.5,
+  "kallisto_version": "0.46.2",
+  "index_version": 10,
+  "start_time": "Sun May 23 23:51:45 2021",
+  "call": "kallisto quant --threads 8 --index /Volumes/CarrotCake/garden/data/grch/Homo_sapiens.GRCh38.cdna.all.fa.gz.kallisto_index --output-dir S6 /Users/kwat/Downloads/136-6_S6_L004_R1_001.fastq.gz /Users/kwat/Downloads/136-6_S6_L004_R2_001.fastq.gz"
 }
