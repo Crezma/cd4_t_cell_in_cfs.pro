@@ -36,6 +36,11 @@ For example, `output/compare_feature/cfs_ta_vs_cfs_cd4/get_log_ratio/function_he
 
 Each `function_heat_map.html` is accompanied with `statistic.tsv`, which shows the scores for the rest of the genes.
 
+Log ratios between the healthy TA and CD4 samples and the log ratios between the CFS TA and CD4 samples were compared.
+`output/compare_log_ratio.html` shows the comparison, with the most changed genes and CD4 highlighted.
+
+![](output/compare_log_ratio.png)
+
 ## Gene Set Enrichment Analysis (GSEA)
 
 Gene-by-sample matrix was converted into gene-set-by-sample matrix using GSEA and the MSigDB gene sets, covering over 20,000 pathways, ontologies, and more.
