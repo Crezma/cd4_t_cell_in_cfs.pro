@@ -1,3 +1,5 @@
+This analysis was done (and fully reproducible) with https://github.com/KwatME/compare.
+
 ## Samples
 
 The data is from 4 people, 1 healthy person and 3 chronic fatigue syndrome (CFS) patients.
@@ -91,5 +93,3 @@ The trends seen in the above CD4 comparison is similar in this CFS CD4 compariso
 ### Summary
 
 `output/summarize/` contains the figures that summrizes these interpretations.
-
-
