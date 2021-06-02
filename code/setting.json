@@ -1,0 +1,87 @@
+{
+  "pr": {
+    "axdr": 0,
+    "n_no": 8,
+    "n_un": 2,
+    "lo": 2,
+    "mish": 1,
+    "me": "-0-",
+    "axno": 0
+  },
+
+  "co_": [
+    "CFS",
+    "CD4",
+    [
+      ["CFS", "TA"],
+      ["CFS", "CD4"]
+    ]
+  ],
+
+  "n_jo": 10,
+
+  "n_ex": 8,
+  "n_sa": 10,
+  "n_sh": 10,
+  "st": 3.2,
+
+  "n_ge": 3,
+  "._ge": 0.9,
+
+  "sc": "get_ic",
+
+  "fe_": ["CD4"],
+
+  "se_": [
+    "HP_APNEIC_EPISODES_PRECIPITATED_BY_ILLNESS_FATIGUE_STRESS",
+    "HP_EXERCISE_INDUCED_MUSCLE_FATIGUE",
+    "HP_FATIGUE",
+    "HP_CHRONIC_FATIGUE",
+    "CD4+ in Celiac Disease 1",
+    "CD4+ in Celiac Disease 2"
+  ],
+
+  "su_": [
+    {
+      "ELF4": ["ELF4", "IPA_ELF4_UP"],
+      "CFS Signatures": ["HP_CHRONIC_FATIGUE"],
+      "Single Cell Signatures": [
+        "FAN_OVARY_CL10_PUTATIVE_EARLY_ATRESIA_GRANULOSA_CELL",
+        "TRAVAGLINI_LUNG_CD8_MEMORY_EFFECTOR_T_CELL",
+        "MENON_FETAL_KIDNEY_1_EMBRYONIC_RED_BLOOD_CELLS"
+      ]
+    },
+    {
+      "CD4 Gene Expression": ["CD4"],
+      "Hallmark Signatures": ["HALLMARK_MYC_TARGETS_V2"],
+      "Naive CD4 Signature": [
+        "GSE22886_NAIVE_CD4_TCELL_VS_DC_UP",
+        "GSE11057_NAIVE_CD4_VS_PBMC_CD4_TCELL_UP",
+        "GOCC_T_CELL_RECEPTOR_COMPLEX"
+      ],
+      "Single Cell Signatures": [
+        "TRAVAGLINI_LUNG_CD4_NAIVE_T_CELL",
+        "FAN_EMBRYONIC_CTX_BRAIN_NAIVE_LIKE_T_CELL",
+        "LAKE_ADULT_KIDNEY_C30_IMMUNE_CELLS_MACROPHAGES"
+      ]
+    },
+    {
+      "CD4 Gene Expression": ["CD4"],
+      "CD4 Signature": [
+        "GSE22886_NAIVE_CD4_TCELL_VS_DC_UP",
+        "GSE11057_NAIVE_CD4_VS_PBMC_CD4_TCELL_UP",
+        "GOCC_T_CELL_RECEPTOR_COMPLEX"
+      ],
+      "CD4 Signatures from the Celiac Disease Paper": [
+        "CD4+ in Celiac Disease 1",
+        "CD4+ in Celiac Disease 2"
+      ],
+      "Single Cell Signatures": [
+        "TRAVAGLINI_LUNG_CD4_NAIVE_T_CELL",
+        "FAN_EMBRYONIC_CTX_BRAIN_NAIVE_LIKE_T_CELL",
+        "LAKE_ADULT_KIDNEY_C30_IMMUNE_CELLS_MACROPHAGES"
+      ],
+      "Ingenuity Pathways": ["IPA_YBX1_UP", "IPA_CIITA_DN", "IPA_VAV1_UP"]
+    }
+  ]
+}
