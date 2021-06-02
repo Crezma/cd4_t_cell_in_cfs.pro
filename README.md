@@ -59,7 +59,7 @@ CFS samples have more CFS signals.
 Looking at `compare_set/cfs/get_ic/ipa.gmt/function_heat_map.html`:
 CFS samples have more ELF4 activities.
 
-![](image.png)
+![](other/1.png)
 
 ### CD4+ from all
 
@@ -76,7 +76,7 @@ CD4 samples have more lung CD4 naive T cells.
 Looking at `compare_set/cd4/get_ic/h.all.v7.4.symbols.gmt/function_heat_map.html`:
 CD4 samples have more MYC signals.
 
-![](image.png)
+![](other/2.png)
 
 ### CD4+ from CFS
 
@@ -86,7 +86,7 @@ This could be due to the large size of the signature and the differences in the 
 
 The trends seen in the above CD4 comparison is similar in this CFS CD4 comparison.
 
-![](image.png)
+![](other/3.png)
 
 ### Summary
 
