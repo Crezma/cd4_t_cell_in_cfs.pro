@@ -11,18 +11,17 @@
 
   "co_": [
     "CFS",
-    "CD4",
     [
       ["CFS", "TA"],
       ["CFS", "CD4"]
     ]
   ],
 
-  "n_jo": 12,
+  "n_jo": 8,
 
   "n_ex": 8,
-  "n_sa": 10,
-  "n_sh": 10,
+  "n_sa": 50,
+  "n_sh": 50,
   "st": 3.2,
 
   "n_ge": 3,
@@ -49,20 +48,6 @@
         "FAN_OVARY_CL10_PUTATIVE_EARLY_ATRESIA_GRANULOSA_CELL",
         "TRAVAGLINI_LUNG_CD8_MEMORY_EFFECTOR_T_CELL",
         "MENON_FETAL_KIDNEY_1_EMBRYONIC_RED_BLOOD_CELLS"
-      ]
-    },
-    {
-      "CD4 Gene Expression": ["CD4"],
-      "Hallmark Signatures": ["HALLMARK_MYC_TARGETS_V2"],
-      "Naive CD4 Signature": [
-        "GSE22886_NAIVE_CD4_TCELL_VS_DC_UP",
-        "GSE11057_NAIVE_CD4_VS_PBMC_CD4_TCELL_UP",
-        "GOCC_T_CELL_RECEPTOR_COMPLEX"
-      ],
-      "Single Cell Signatures": [
-        "TRAVAGLINI_LUNG_CD4_NAIVE_T_CELL",
-        "FAN_EMBRYONIC_CTX_BRAIN_NAIVE_LIKE_T_CELL",
-        "LAKE_ADULT_KIDNEY_C30_IMMUNE_CELLS_MACROPHAGES"
       ]
     },
     {
