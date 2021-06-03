@@ -1,0 +1,13 @@
+{
+  "n_targets": 187626,
+  "n_bootstraps": 0,
+  "n_processed": 38427724,
+  "n_pseudoaligned": 33216377,
+  "n_unique": 6643850,
+  "p_pseudoaligned": 86.4,
+  "p_unique": 17.3,
+  "kallisto_version": "0.46.2",
+  "index_version": 10,
+  "start_time": "Sun May 23 23:53:55 2021",
+  "call": "kallisto quant --threads 8 --index /Volumes/CarrotCake/garden/data/grch/Homo_sapiens.GRCh38.cdna.all.fa.gz.kallisto_index --output-dir S7 /Users/kwat/Downloads/136-7_S7_L004_R1_001.fastq.gz /Users/kwat/Downloads/136-7_S7_L004_R2_001.fastq.gz"
+}
