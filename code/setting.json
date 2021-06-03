@@ -1,12 +1,9 @@
 {
   "pr": {
     "axdr": 0,
-    "n_no": 8,
     "n_un": 2,
     "lo": 2,
-    "mish": 1,
-    "me": "-0-",
-    "axno": 0
+    "mish": "0<"
   },
 
   "co_": [
@@ -19,9 +16,9 @@
 
   "n_jo": 8,
 
-  "n_ex": 8,
-  "n_sa": 50,
-  "n_sh": 50,
+  "n_ex": 16,
+  "n_sa": 100,
+  "n_sh": 100,
   "st": 3.2,
 
   "n_ge": 3,
@@ -33,7 +30,6 @@
 
   "se_": [
     "HP_APNEIC_EPISODES_PRECIPITATED_BY_ILLNESS_FATIGUE_STRESS",
-    "HP_EXERCISE_INDUCED_MUSCLE_FATIGUE",
     "HP_FATIGUE",
     "HP_CHRONIC_FATIGUE",
     "CD4+ in Celiac Disease 1",
