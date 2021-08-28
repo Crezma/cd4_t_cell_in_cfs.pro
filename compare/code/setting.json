@@ -38,7 +38,7 @@
 
   "su_": [
     {
-      "CFS Signatures": ["HP_CHRONIC_FATIGUE"]
+      "CFS Signatures": ["HP_FATIGUE", "HP_CHRONIC_FATIGUE"]
     },
     {
       "CD4 Signatures from the Celiac Disease Paper": [
