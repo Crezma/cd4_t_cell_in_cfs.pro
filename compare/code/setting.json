@@ -1,0 +1,50 @@
+{
+  "pr": {
+    "axd": 0,
+    "n_no": -1,
+    "n_un": 2,
+    "lo": 2,
+    "sh": 1
+  },
+
+  "co_": [
+    "CFS",
+    [
+      ["CFS", "TA"],
+      ["CFS", "CD4"]
+    ]
+  ],
+
+  "n_jo": 8,
+
+  "n_ex": 16,
+  "n_sa": 10,
+  "n_sh": 10,
+  "st": 4,
+
+  "n_ge": 3,
+  "._ge": 0.8,
+
+  "sc": "get_ic",
+
+  "fe_": ["CD4", "HLA-A", "HLA-B", "HLA-C", "HLA-DRA", "HLA-DRB1", "HLA-E"],
+
+  "se_": [
+    "HP_FATIGUE",
+    "HP_CHRONIC_FATIGUE",
+    "CD4+ in Celiac Disease 1",
+    "CD4+ in Celiac Disease 2"
+  ],
+
+  "su_": [
+    {
+      "CFS Signatures": ["HP_CHRONIC_FATIGUE"]
+    },
+    {
+      "CD4 Signatures from the Celiac Disease Paper": [
+        "CD4+ in Celiac Disease 1",
+        "CD4+ in Celiac Disease 2"
+      ]
+    }
+  ]
+}
