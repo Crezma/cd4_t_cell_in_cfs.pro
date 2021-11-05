@@ -12,9 +12,9 @@ There are multiple parts to this project. They are listed below:
 
 ### Data
 
-The data is from 8 people. 6 of them are `CFS` and 2 are `Healthy`. For each person, Dr Jing isolated the `TA` and the `CD4` cells. She then sequenced their total RNA.
+The data is from eight people. Four people are `Healthy` and the other four are `CFS`. For each person, Dr Jing isolated the `TA` and the `CD4` cells. She then sequenced their total RNA.
 
-Initially, Dr Jing game me only the first 8 samples, which I analyzed in the previous project. She then gave me another 8 samples. So, this project analyzes the initial 8 samples together with the new 8 samples, with total of 16 samples.
+Initially, Dr Jing game me only 8 samples (1 `Healthy` and 3 `CFS`), which I analyzed in the previous project. She then gave me another 8 samples (3 `Healthy` and 1 `CFS`). And this project analyzes all of them together, with total of 16 samples (4 `Healthy` and 4 `CFS`).
 
 ### Create the gene-by-sample matrix
 
@@ -29,26 +29,80 @@ I compared the gene expressions between the following groups:
 2. `CFS TA` vs `CFS CD4`
 
 I compared the expressions by two functions:
-1. By simply taking the differences
-2. By computing information coefficient, a better way of computing association
+1. `separate_and_get_difference`, which simply takes the difference between the median expressions of the groups. So, its `Score` means *the difference in the gene expression between the groups*.
+2. `get_ic`, which computes information coefficient between the group membership and the expression. So its `Score` means *the association between the group and the gene expression*.
 
 #### `Healthy` vs `CFS` 
 
-![/output/compare_feature/cfs/separate_and_get_difference/](./output/compare_feature/cfs/separate_and_get_difference/function_heat_map.png)
+![./output/compare_feature/cfs/separate_and_get_difference/](./output/compare_feature/cfs/separate_and_get_difference/function_heat_map.png)
 
-![/output/compare_feature/cfs/get_ic/](./output/compare_feature/cfs/get_ic/function_heat_map.png)
+![./output/compare_feature/cfs/get_ic/](./output/compare_feature/cfs/get_ic/function_heat_map.png)
 
 #### `CFS TA` vs `CFS CD4` 
 
-![/output/compare_feature/cfs_ta_vs_cfs_cd4/separate_and_get_difference/](./output/compare_feature/cfs/separate_and_get_difference/function_heat_map.png)
+![./output/compare_feature/cfs_ta_vs_cfs_cd4/separate_and_get_difference/](./output/compare_feature/cfs_ta_vs_cfs_cd4/separate_and_get_difference/function_heat_map.png)
 
-![/output/compare_feature/cfs_ta_vs_cfs_cd4/get_ic/](./output/compare_feature/cfs/get_ic/function_heat_map.png)
+![./output/compare_feature/cfs_ta_vs_cfs_cd4/get_ic/](./output/compare_feature/cfs_ta_vs_cfs_cd4/get_ic/function_heat_map.png)
 
 ### Compare the differences of differences in gene expression
 
 ### Create the gene-set-by-sample matrix using single-sample GSEA
 
+Using `single-sample GSEA`, I computed the enrichments of over 30,000 gene sets, containing [the Molecular Signature Database collections](http://www.gsea-msigdb.org/gsea/msigdb/collections.jsp), [the Ingenuity Pathway Analysis collection](https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-ipa/?cmpid=QDI_GA_IPA&gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG5KP7qCQniga38ftVeIWhiXE5lSxQNUVxiDVcnsOFhz9-mGuB855saAhwHEALw_wcB), and [my original collections](https://github.com/KwatMDPhD/gene_set.pro).
+
 ### Compare gene-set enrichment
+
+Just as I compared the gene expressions, I compared the enrichments between the groups. However, since a difference in the enrichment score is difficult to interpret, it did not make sense to use `separate_and_get_difference`. So, I only computed the association between the groups and the enrichments using `get_ic`.
+
+For better interpretation, I also plotted the same `function_heat_map` for each gene-set collection.
+
+#### `Healthy` vs `CFS` 
+
+##### All gene-set collections
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/function_heat_map.png)
+
+##### Gene-set collection H: hallmark gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/h.png)
+
+##### Gene-set collection C1: positional gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c1.png)
+
+##### Gene-set collection C2: curated gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c2.png)
+
+##### Gene-set collection C3: regulatoray target gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c3.png)
+
+##### Gene-set collection C4: computational gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c4.png)
+
+##### Gene-set collection C5: ontology gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c5.png)
+
+##### Gene-set collection C6: oncogenic gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c6.png)
+
+##### Gene-set collection C7: immunologic gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c7.png)
+
+##### Gene-set collection C8: cell-type gene sets 
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c8.png)
+
+##### Gene-set collection Ingenuity: Ingenuity Pathway Analysis gene sets
+
+![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/ipa.png)
+
+#### `CFS TA` vs `CFS CD4` 
 
 ## Howdy :wave: :cowboy_hat_face:
 
