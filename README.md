@@ -4,26 +4,26 @@ In this project, I compared the gene expressions and gene set enrichments betwee
 
 There are multiple parts to this project. Each part has a corresponding folder in [`output`](./output), containing all figures and `.tsv`s.
 
-1. [Prepare the data](#1-prepare-the-data)
-2. [Create the gene-by-sample matrix](#2-create-the-gene-by-sample-matrix)
-3. [Compare the gene expressions](#3-compare-the-gene-expressions)
-4. [Compare the differences of the differences in the gene expressions](#4-compare-the-differences-of-the-differences-in-the-gene-expressions)
-5. [Create the gene-set-by-sample matrix using single-sample GSEA](#5-create-the-gene-set-by-sample-matrix-using-single-sample-gsea)
-6. [Compare the gene-set enrichments](#6-compare-the-gene-set-enrichments)
+1. [Prepare the data](#1.-prepare-the-data)
+2. [Create the gene-by-sample matrix](#2.-create-the-gene-by-sample-matrix)
+3. [Compare the gene expressions](#3.-compare-the-gene-expressions)
+4. [Compare the differences of the differences in the gene expressions](#4.-compare-the-differences-of-the-differences-in-the-gene-expressions)
+5. [Create the gene-set-by-sample matrix using single-sample GSEA](#5.-create-the-gene-set-by-sample-matrix-using-single-sample-gsea)
+6. [Compare the gene-set enrichments](#6.-compare-the-gene-set-enrichments)
 
-### 1 Prepare the data
+### 1. Prepare the data
 
 The data is from eight people. Four people are `Healthy` and the other four are `CFS`. For each person, Dr Jing isolated the `TA` and the `CD4` cells. She then sequenced their total RNA.
 
 Initially, Dr Jing game me only 8 samples (1 `Healthy` and 3 `CFS`), which I analyzed in the previous project. She then gave me another 8 samples (3 `Healthy` and 1 `CFS`). And this project analyzes all of them together, with total of 16 samples (4 `Healthy` and 4 `CFS`).
 
-### 2 Create the gene-by-sample matrix
+### 2. Create the gene-by-sample matrix
 
 For each sample, I mapped the reads (from the `FASTQ` files) into `TPM` using `Kallisto`. I then assgined the the expression score for each gene by summing all `TPM`s of transcripts for the gene.
 
 I also normalized the expression scores by simply adding one to all and then logging with base two.
 
-### 3 Compare the gene expressions
+### 3. Compare the gene expressions
 
 I compared the gene expressions between the following groups:
 
@@ -47,7 +47,7 @@ I compared the expressions by two functions:
 
 ![./output/compare_feature/cfs_ta_vs_cfs_cd4/get_ic/](./output/compare_feature/cfs_ta_vs_cfs_cd4/get_ic/function_heat_map.png)
 
-### 4 Compare the differences of the differences in the gene expressions
+### 4. Compare the differences of the differences in the gene expressions
 
 I plotted on the `X-axis` the gene-expression difference between `TA` and `CD4` in `Healthy`: `Healthy CD4` - `Healthy TA`.
 
@@ -61,11 +61,11 @@ Conversely, the genes in the right-lower area have **increased** expressions in 
 
 ![./output/compare_feature_differences/](./output/compare_feature_differences/cd4_minus_ta_in_cfs_vs_cd4_minus_ta_in_healthy.png)
 
-### 5 Create the gene-set-by-sample matrix using single-sample GSEA
+### 5. Create the gene-set-by-sample matrix using single-sample GSEA
 
 Using `single-sample GSEA`, I computed the enrichments of over 30,000 gene sets, containing [the Molecular Signature Database collections](http://www.gsea-msigdb.org/gsea/msigdb/collections.jsp), [the Ingenuity Pathway Analysis collection](https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-ipa/?cmpid=QDI_GA_IPA&gclid=Cj0KCQjwrJOMBhCZARIsAGEd4VG5KP7qCQniga38ftVeIWhiXE5lSxQNUVxiDVcnsOFhz9-mGuB855saAhwHEALw_wcB), and [my original collections](https://github.com/KwatMDPhD/gene_set.pro).
 
-### 6 Compare the gene-set enrichments
+### 6. Compare the gene-set enrichments
 
 Just as I compared the gene expressions, I compared the enrichments between the groups. However, since a difference in the enrichment score is difficult to interpret, it did not make sense to use `separate_and_get_difference`. So, I only computed the association between the groups and the enrichments using `get_ic`.
 
