@@ -93,7 +93,7 @@ For better interpretation, I also plotted the same `function_heat_map` for each 
 
 ![./output/compare_set/cfs/get_ic/](./output/compare_set/cfs/get_ic/c3.png)
 
-##### [Gene-set collection C4: computational gene sets](./output/compare_set/cfs/get_ic/)
+##### [Gene-set collection C4: computational gene sets](./output/compare_set/cfs/get_ic/c4.png)
 
 ##### Gene-set collection C5: ontology gene sets
 
@@ -137,7 +137,7 @@ For better interpretation, I also plotted the same `function_heat_map` for each 
 
 ![./output/compare_set/cfs_ta_vs_cfs_cd4/get_ic/](./output/compare_set/cfs_ta_vs_cfs_cd4/get_ic/c3.png)
 
-##### [Gene-set collection C4: computational gene sets](./output/compare_set/cfs_ta_vs_cfs_cd4/get_ic/)
+##### [Gene-set collection C4: computational gene sets](./output/compare_set/cfs_ta_vs_cfs_cd4/get_ic/c4.png)
 
 ##### Gene-set collection C5: ontology gene sets
 
