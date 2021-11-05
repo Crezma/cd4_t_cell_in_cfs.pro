@@ -2,7 +2,7 @@
 
 In this project, I compared the gene expressions and gene set enrichments between the healthy and the CFS samples. In this writing, I will refer to these sample groups as `Healthy` and `CFS`, respectively.
 
-There are multiple parts to this project. They are listed below:
+There are multiple parts to this project. Each part has a corresponding folder in [`output`](./output), containing all figures and `.tsv`s.
 
 1. [Prepare the data](#prepare-the-data)
 2. [Create the gene-by-sample matrix](#create-the-gene-by-sample-matrix)
