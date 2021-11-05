@@ -1,12 +1,13 @@
 using Revise
 using BenchmarkTools
 
-using LeanProject
+#using LeanProject
 
+# ========================
 se = joinpath("..", "input", "setting.json")
 
-PAR, PAI, PAC, PAO = get_project_path(se)
+#PAR, PAI, PAC, PAO = get_project_path(se)
 
-SE = read_setting(se)
+#SE = read_setting(se)
 
-# ==============================================================================
+# ========================
